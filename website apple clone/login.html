@@ -1,0 +1,117 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apple Login</title>
+  <link rel="stylesheet" href="login.css" />
+  <script src="loginjs.js"></script>
+  <script>
+    function login() {
+      var name = document.getElementById("uname").value;
+      var pwd = document.getElementById("upass").value;
+
+      var pwd_expression = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-])/;
+      var letters = /^[A-Za-z]+$/;
+      var filter = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+
+      if (name == "") {
+        alert('Enter the Apple ID');
+      }
+      else if (!letters.test(name)) {
+        alert('Name field required only alphabet characters');
+      }
+      else if (pwd == " ") {
+        alert('Enter the password');
+      }
+      else if (!pwd_expression.test(pwd)) {
+        alert('Upper case, Lower case, Special character and Numeric letter are required in Password filed');
+      }
+      else {
+        alert('Logined Sucessfully');
+      }
+    }
+
+
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="nav1">
+        <a href="file:///C:/Users/tonyk/Desktop/website%20apple%20project%20@lab/home.html">
+          <img
+            src="https://www.apple.com/ac/globalnav/6/en_IN/images/be15095f-5a20-57d0-ad14-cf4c638e223a/globalnav_apple_image__cxwwnrj0urau_large.svg"
+            class="logo" />
+        </a>
+
+        <a href="https://www.apple.com/in/mac/"> Mac </a>
+        <a href="https://www.apple.com/in/ipad/"> iPad </a>
+        <a href="file:///C:/Users/tonyk/Desktop/web%20design/home.html#">
+          iPhone
+        </a>
+        <a href="https://www.apple.com/in/watch/"> Watch </a>
+        <a href="https://www.apple.com/in/tv/"> TV </a>
+        <a href="https://www.apple.com/in/music/"> Music </a>
+        <a href="">
+          Sign up</a><br />
+        <img src="icons8-search-24.png" class="srh" />
+      </div>
+    </div>
+  </header>
+  <div class="details">
+    <span>
+      <br /><br />
+      <h1>Please sign in.</h1>
+      <form>
+        <label for="uname"></label>
+        <input type="text" placeholder="Apple ID" class="id" id="uname" /><br />
+        <input type="password" placeholder="Password" class="pass" id="upass" />
+        <p>
+          Your Apple ID is the email address or mobile phone number you use
+          <br />
+          to sign in to iTunes, the App Store, and iCloud
+        </p>
+        <input type="button" value="Login in" class="btn1" onclick="login()" />
+      </form>
+      <p class="cau">
+        Forgot your Apple ID or password?<br />
+        <a href="signup.html"> Don’t have an Apple ID? Create one now.</a>
+      </p>
+    </span>
+  </div>
+  <hr />
+
+  <footer>
+    <p>
+      Need some help?Chat now or call 000800 040 1966.
+    </p>
+  </footer>
+  <div class="Policy">
+    <p>
+      The Apple Online Store uses industry-standard encryption to protect the
+      confidentiality of the information you submit. Learn more about our
+      Security Policy.
+    </p>
+    <hr class="hrfo" />
+
+    <span>
+      More ways to shop: Find a retailer near you. Or call 000800 040 1966.<br /></span>
+  </div>
+  <div class="foot">
+    <div class="one">Copyright © 2021 Apple Inc. All rights reserved.</div>
+
+    <ul>
+      <li>Privacy Policy</li>
+      <li>Terms of Use</li>
+      <li>Sales Policy</li>
+      <li>Legal</li>
+      <li>Site Map</li>
+    </ul>
+  </div>
+
+</body>
+
+</html>

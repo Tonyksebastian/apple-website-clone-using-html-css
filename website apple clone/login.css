@@ -1,0 +1,126 @@
+body {
+  margin: 0%;
+  padding: 0%;
+}
+.container {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: relative;
+  height: 43px;
+  width: 100%;
+}
+.nav1 {
+  padding-left: 390px;
+  display: flex;
+  word-spacing: 10%;
+  position: relative;
+  padding-bottom: 10px;
+  padding-top: 1%;
+  color: white;
+}
+.nav1 a {
+  margin-left: 60px;
+  text-decoration: none;
+  color: cornsilk;
+  font-size: small;
+}
+.logo {
+  position: relative;
+  top: 0%;
+  margin-top: -15px;
+}
+.details {
+  margin-left: 15%;
+}
+.srh {
+  margin-left: 60px;
+  text-decoration: none;
+  cursor: pointer;
+  color: cornsilk;
+  font-size: small;
+  height: 17px;
+  width: 17px;
+}
+.id{
+  width: 30%;
+  height: 8%;
+  border:2px solid cornflowerblue;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  margin-top: 40px;
+}
+.id:focus{
+  border-color: cornflowerblue;
+  border-width: 4px;
+  border-radius: 12px;
+  outline: none;
+}
+.pass{
+  width: 30%;
+  height: 8%;
+  border:2px solid cornflowerblue;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+.pass:focus{
+  border-color: cornflowerblue;
+  border-width: 4px;
+  border-radius: 12px;
+  outline: none;
+}
+.btn1 {
+  width: 30%;
+  height: 8%;
+  border-radius: 12px;
+  font-size: medium;
+  margin-top: 15px;
+  text-align: center;
+  cursor: pointer;
+  background-color: cornflowerblue;
+  color: aliceblue;
+  border-width: 2% ;
+  border:1px solid cornflowerblue;
+}
+.btn1:hover{
+  text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+  transition: cubic-bezier(0.47, 0, 0.745, 0.715);
+  background-color: rgb(123, 188, 241);
+}
+.cau{
+  margin-bottom: 100px;
+  color: cornflowerblue;
+  line-height: -3%;
+  text-decoration: none;
+  height: fit-content;
+  
+}
+.cau a{
+  text-decoration: none;
+  color: cornflowerblue;
+}
+footer {
+  margin-left: 15%;
+}
+.policy p {
+  margin-left: 15%;
+}
+.hrfo {
+  margin-left: 15%;
+  margin-right: 15%;
+}
+span{
+  margin-left: 15%;
+}
+.foot{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 6.7%;
+  margin-top: -50px;
+  top: 10px;
+}
+.foot ul li{  
+display: inline-block;
+margin: 40px 20px;
+}
+
+
